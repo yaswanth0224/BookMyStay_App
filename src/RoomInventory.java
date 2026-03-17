@@ -11,16 +11,14 @@ public class RoomInventory {
     }
 
     private void initializeInventory() {
-        roomAvailability.put("Single Room", 5);
-        roomAvailability.put("Double Room", 3);
-        roomAvailability.put("Suite Room", 2);
+
+        roomAvailability.put("Single", 5);
+        roomAvailability.put("Double", 3);
+        roomAvailability.put("Suite", 2);
+
     }
 
     public Map<String, Integer> getRoomAvailability() {
         return roomAvailability;
-    }
-
-    public void updateAvailability(String roomType, int count) {
-        roomAvailability.put(roomType, count);
     }
 }
